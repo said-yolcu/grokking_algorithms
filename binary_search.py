@@ -1,3 +1,5 @@
+import utilities as util
+
 def binary_search(liste, low, high, value):
 
     while (high-low > 1):
@@ -13,21 +15,10 @@ def binary_search(liste, low, high, value):
     return -1
 
 
-def fill_fibo(liste, until):
-    a = 1
-    b = 1
-
-    liste.append(b)
-
-    for i in range(until-2):
-        b, a = a+b, b
-        liste.append(b)
-
-
 if __name__ == "__main__":
     liste = []
 
-    fill_fibo(liste, 10)
+    util.fill_fibo(liste, 10)
 
     value = 56
 
