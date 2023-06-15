@@ -1,6 +1,8 @@
 import utilities as util
 
-
+# Iterate the list to select the max element, put the max element
+# at the end of the list. Repeat this process for the consecutive
+# sublists of decreasing size.
 def selection_sort(liste):
     end = len(liste)
 
