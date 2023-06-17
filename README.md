@@ -19,8 +19,8 @@ Divide and Conquer is a method of creating an algorithm for a given problem. It 
 
 Quicksort is an divide-and-conquer algorithm. It selects a pivot and divides the list into two: the elements less than or equal to pivot are to the left of the pivot, and elements greater than or equal to the pivot are to the right of the pivot. It repeats this process to the left and right sublists until the whole list is sorted.
 
-Complexity:
-Best, Average -> O(n*log(n))
+Complexity: <br />
+Best, Average -> O(n*log(n)) <br />
 Worst -> O(n^2)
 
 ## Hash Tables
@@ -32,3 +32,11 @@ Hash tables are created via combining a hash function with an array. Below table
 | **Search** | O(1) | O(n) |
 | **Insert** | O(1) | O(n) |
 | **Delete** | O(1) | O(n) |
+
+## Breadth-First Search
+
+In breadth-first search we start by visiting a node. We enqueue its neighbor nodes to a visiting queue. After we finish visiting this node, we dequeue a node from the queue and repeat the actions above for this node. We repeat this process until no node is left in the queue.
+
+It can be said that breadth-first search divides a graph into levels and it visits nodes level by level.
+
+Given a graph with V number of vertices (nodes) and E number of edges. Running time of breadth-first search is O(V + E).
