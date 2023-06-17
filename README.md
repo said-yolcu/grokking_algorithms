@@ -23,4 +23,12 @@ Complexity:
 Best, Average -> O(n*log(n))
 Worst -> O(n^2)
 
+## Hash Tables
 
+Hash tables are created via combining a hash function with an array. Below table shows the average and worst-case complexities of different operations on hash tables. Best-case complexities are similar to the average-case.
+
+| | Average | Worst |
+| --- | --- | --- |
+| **Search** | O(1) | O(n) |
+| **Insert** | O(1) | O(n) |
+| **Delete** | O(1) | O(n) |
