@@ -60,3 +60,16 @@ In the algo, certain data structures are kept to record the distances of each no
 > Complexity of Dijkstra's algo is O(V^2) (V is the number of vertices/nodes) but with minimum priority queue, it drops down to O(V + E*log(V))
 
 [Quotation Source](https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/tutorial/)
+
+## Greedy Algorithm
+
+Greedy algo is a type of algo that finds the global optimum via choosing local optima at each step. In other words, the solution for a problem is achieved by:
+
+1. Dividing the problem into steps.
+2. Choosing the best solution for each step one by one.
+3. The global solution is the aggregation of subsolutions.
+
+Most of the time, greedy algo is used to find a good-enough solution to complex problems. In such a situation the algo is called an approximation algo.
+
+
+
