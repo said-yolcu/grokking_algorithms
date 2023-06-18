@@ -35,8 +35,28 @@ Hash tables are created via combining a hash function with an array. Below table
 
 ## Breadth-First Search
 
+Breadth-first search calculates shortest path for unweighted graphs.
+
 In breadth-first search we start by visiting a node. We enqueue its neighbor nodes to a visiting queue. After we finish visiting this node, we dequeue a node from the queue and repeat the actions above for this node. We repeat this process until no node is left in the queue.
 
 It can be said that breadth-first search divides a graph into levels and it visits nodes level by level.
 
 Given a graph with V number of vertices (nodes) and E number of edges. Running time of breadth-first search is O(V + E).
+
+## Dijkstra's Algorithm
+
+Dijkstra's algorithm calculates the shortest path for a weighted graph. It can give erroneous results in negative weighted graphs.
+
+Dijkstra's algo is comprised of 4 steps:
+
+1. Start from the source node
+2. Check whether the distance neighbor's of the current node to the source node is less if accessed via the current node
+3. If so update their distances and add them to a queue
+4. Pop the node with the smallest distance from the queue, and repeat steps 1 to 4
+5. If there is nothing to pop (all nodes are processed), or you popped the destination node, end the algo.
+
+In the algo, certain data structures are kept to record the distances of each node to source, parent of each node, whether a node is processed or not. Along the algo, this records are updated.
+
+> Complexity of Dijkstra's algo is O(V^2) (V is the number of vertices/nodes) but with minimum priority queue, it drops down to O(V + E*log(V))
+
+[Quotation Source](https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/tutorial/)
