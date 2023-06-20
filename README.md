@@ -71,5 +71,23 @@ Greedy algo is a type of algo that finds the global optimum via choosing local o
 
 Most of the time, greedy algo is used to find a good-enough solution to complex problems. In such a situation the algo is called an approximation algo.
 
+## Dynamic Programming
+
+Dynamic programming is the art of building a solution for a problem out of solutions to subproblems. The algo can be divided into these steps:
+
+1. Divide the problem into subproblems.
+2. Find solutions to the most basic subproblems.
+3. Find solutions to the encompassing subproblems, until the entire problem is solved.
+
+For a problem to be solved by dynamic programming, two properties must be existent:
+
+1. Overlapping Subproblems: The problem can be broken down into discrete subproblems, which are used many times during the solving of the problem. 
+2. Optimal Substructure: The optimal solution to a  subproblem can be utilized to obtain the optimal solutions to the encompassing subproblems.
+
+**Resources**:
+
+- [1](https://www.educative.io/answers/what-is-dynamic-programming)
+- [2](https://en.wikipedia.org/wiki/Overlapping_subproblems)
+
 
 
