@@ -89,5 +89,13 @@ For a problem to be solved by dynamic programming, two properties must be existe
 - [1](https://www.educative.io/answers/what-is-dynamic-programming)
 - [2](https://en.wikipedia.org/wiki/Overlapping_subproblems)
 
+## K-Nearest Neighbors
 
+K-nearest neighbors is an algo that is used in object classification and regression. The algo for classification can be summarized as follows:
+
+1. Given a base set of objects, *extract features* (feature extraction is deciding on aspects of objects that can be used to classify them).
+2. Put the base set of objects on a multidimensional graph, where each dimension represents a feature.
+3. Given a new object, look at the k elements nearest to this object. The new object belongs to the class of elements that the relative majority of the elements belong.
+
+Regression of a property can be performed via this algo by taking the average value of that property in k nearest neighbors.
 
